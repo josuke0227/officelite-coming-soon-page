@@ -9,8 +9,11 @@ export const HeaderWrapper = styled.h2`
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1.8rem;
+  line-height: 4.8rem;
 
   @media screen and (min-width: ${laptop}) {
+    width: 100%;
     text-align: left;
   }
 `;

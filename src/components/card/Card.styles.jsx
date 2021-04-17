@@ -48,7 +48,6 @@ export const Container = styled.div`
 `;
 
 export const CardButton = styled(CustomButtonContainer)`
-  display: block;
   margin: 0 auto;
   background: ${(props) => toggleTextColor(props, "")};
   @media screen and (min-width: ${tablet}) {

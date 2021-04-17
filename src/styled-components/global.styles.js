@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Kumbh Sans", sans-serif;
     max-width: 1440px;
-    margin: auto;
+    // margin: auto;
+    margin: 0 2.3rem;
 
     background: ${colorBgDark};
   }

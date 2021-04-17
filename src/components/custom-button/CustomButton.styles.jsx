@@ -63,6 +63,7 @@ export const CustomButtonContainer = styled.button`
   line-height: 1; // adjusting difference of the height between <button> and <sapn>
   padding: 2rem 4rem;
   text-align: left;
+  display: block;
 
   ${switchButtonStyle}
 
