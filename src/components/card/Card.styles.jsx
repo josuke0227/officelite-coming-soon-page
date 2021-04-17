@@ -15,6 +15,16 @@ export const hilighted = css`
   background-position-x: center;
   background-position-y: -380px;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: ${tablet}) {
+    background-position-x: -327px;
+    background-position-y: center;
+  }
+
+  @media screen and (min-width: ${laptop}) {
+    background-position-x: center;
+    background-position-y: -380px;
+  }
 `;
 
 export const Container = styled.div`
@@ -33,6 +43,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: ${laptop}) {
     flex-direction: column;
+    padding-left: 0;
   }
 `;
 

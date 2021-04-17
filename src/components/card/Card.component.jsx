@@ -4,19 +4,25 @@ import Features from "../features/Features.component";
 
 import { CardButton, Container } from "./Card.styles";
 
-const Card = () => (
-  <Container>
-    <PlanHeader />
-    <Features />
-    <CardButton pale>Try for Free</CardButton>
-  </Container>
-  // <Container highlighted>
-  //   <PlanHeader highlighted={true} />
-  //   <Features highlighted={true} />
-  //   <CardButton pale highlighted>
-  //     Try for Free
-  //   </CardButton>
-  // </Container>
-);
+const Card = ({ plan }) => {
+  const { name, price, description, features } = plan;
+
+  const shouldHighlight = name.match("Pro");
+
+  return (
+    <Container highlighted={shouldHighlight}>
+      <PlanHeader
+        name={name}
+        price={price}
+        description={description}
+        highlighted={shouldHighlight}
+      />
+      <Features features={features} highlighted={shouldHighlight} />
+      <CardButton pale highlighted={shouldHighlight}>
+        Try for Free
+      </CardButton>
+    </Container>
+  );
+};
 
 export default Card;

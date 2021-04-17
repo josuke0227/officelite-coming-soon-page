@@ -6,12 +6,12 @@ import {
   PriceWrapper,
 } from "./PlanHeader.styles";
 
-const PlanHeader = ({ highlighted }) => (
+const PlanHeader = ({ name, price, description, highlighted }) => (
   <Container highlighted={highlighted}>
-    <PlanNameWrapper>Basic</PlanNameWrapper>
-    <PriceWrapper>Free</PriceWrapper>
+    <PlanNameWrapper>{name}</PlanNameWrapper>
+    <PriceWrapper>{price}</PriceWrapper>
     <PlanDescriptionWrapper highlighted={highlighted}>
-      Up to 5 users for free
+      {description}
     </PlanDescriptionWrapper>
   </Container>
 );
