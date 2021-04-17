@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.9rem;
     font-weight: 700;
     line-height: 4.8rem;
     color: ${colorPrimary};
@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 2.6rem;
     color: ${colorSecondary};

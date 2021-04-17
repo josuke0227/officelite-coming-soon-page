@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { tablet } from "../../styled-components/constants/displayBreakpoint";
 
 export const HeroImageWrapper = styled.div`
-  width: 70%;
-  margin-bottom: 6rem;
+  width: 60%;
+  margin: 0px auto 4rem;
 
   @media screen and (min-width: ${tablet}) {
     flex: 1;
