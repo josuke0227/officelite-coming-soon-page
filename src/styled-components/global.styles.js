@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { colorPrimary, colorSecondary } from "./constants/colors";
 import { laptop, tablet } from "./constants/displayBreakpoint";
 
 export const GlobalStyle = createGlobalStyle`
@@ -23,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 4rem;
     font-weight: 700;
     line-height: 4.8rem;
-    color: $color-primary;
+    color: ${colorPrimary};
   }
 
   h3 {
@@ -39,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.6rem;
-    color: $color-secondary;
+    color: ${colorSecondary};
   }
 
   li {
