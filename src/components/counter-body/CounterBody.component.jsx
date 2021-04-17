@@ -2,21 +2,25 @@ import React from "react";
 
 import { Container } from "./CounterBody.styles";
 
-const CounterBody = () => (
-  <Container>
-    <li>
-      <span>78</span>days
-    </li>
-    <li>
-      <span>34</span>hours
-    </li>
-    <li>
-      <span>56</span>minues
-    </li>
-    <li>
-      <span>78</span>seconds
-    </li>
-  </Container>
-);
+const CounterBody = ({ count }) => {
+  const [day, hours, minutes, seconds] = count;
+
+  return (
+    <Container>
+      <li>
+        <span>{day}</span>days
+      </li>
+      <li>
+        <span>{hours}</span>hours
+      </li>
+      <li>
+        <span>{minutes}</span>minues
+      </li>
+      <li>
+        <span>{seconds}</span>seconds
+      </li>
+    </Container>
+  );
+};
 
 export default CounterBody;

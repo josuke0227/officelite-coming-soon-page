@@ -1,11 +1,17 @@
 import React from "react";
 import { DateWrapper, HeaderWrapper } from "./CountdownHeader.styles";
 
-const CountdownHeader = () => (
-  <HeaderWrapper>
-    Coming
-    <DateWrapper>4 NOV 2020</DateWrapper>
-  </HeaderWrapper>
-);
+import { updateLaunchDate } from "../../utils/counter.utils";
+
+const CountdownHeader = ({ launchDate }) => {
+  const dateString = updateLaunchDate(launchDate);
+
+  return (
+    <HeaderWrapper>
+      Coming
+      <DateWrapper>{dateString}</DateWrapper>
+    </HeaderWrapper>
+  );
+};
 
 export default CountdownHeader;
