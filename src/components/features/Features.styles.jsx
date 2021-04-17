@@ -16,10 +16,13 @@ export const FeaturesWrapper = styled.ul`
 
   @media screen and (min-width: ${tablet}) {
     text-align: left;
+    width: 50%;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: ${laptop}) {
     text-align: center;
+    margin-bottom: 3.2rem;
   } ;
 `;
 

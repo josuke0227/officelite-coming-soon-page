@@ -9,13 +9,17 @@ export const Container = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 
   @media screen and (min-width: ${tablet}) {
+    margin-bottom: 2.4rem;
     align-items: start;
+    width: 50%;
   }
 
   @media screen and (min-width: ${laptop}) {
     align-items: center;
+    margin-bottom: 5rem;
   }
 `;
 

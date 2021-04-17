@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./components/hero/Hero.component";
-import PlanHeader from "./components/plan-summary/PlanHeader.component";
+import Card from "./components/card/Card.component";
 
 import { GlobalStyle } from "./styled-components/global.styles";
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <PlanHeader />
+      <Card />
     </>
   );
 }
