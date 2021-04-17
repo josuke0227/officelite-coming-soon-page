@@ -12,7 +12,12 @@ export const HeroContent = styled.article`
   align-items: center;
 
   @media screen and (min-width: ${tablet}) {
+    flex: 1;
     align-items: start;
+  }
+
+  @media screen and (min-width: ${laptop}) {
+    justify-content: center;
   }
 `;
 
