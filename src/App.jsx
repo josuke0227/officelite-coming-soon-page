@@ -1,14 +1,14 @@
 import React from "react";
+import CountdownHeader from "./components/countdown-header/CountdownHeader.component";
 import Hero from "./components/hero/Hero.component";
 
 import { GlobalStyle } from "./styled-components/global.styles";
-import Pricing from "./components/pricing/Pricing.component";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Pricing />
+      <CountdownHeader />
     </>
   );
 }
