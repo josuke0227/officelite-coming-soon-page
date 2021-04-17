@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { colorSecondary } from "../../styled-components/constants/colors";
+
+import { toggleTextColor } from "../../styled-components/utils/toggleTextColor";
 import {
   laptop,
   tablet,
 } from "../../styled-components/constants/displayBreakpoint";
 
 export const FeaturesWrapper = styled.ul`
-  color: ${colorSecondary};
+  color: ${(props) => toggleTextColor(props, colorSecondary)};
   font-size: 1.6rem;
   font-weight: 300;
   padding: 0;

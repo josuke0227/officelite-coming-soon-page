@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { colorPrimary } from "../../styled-components/constants/colors";
+
+import { toggleTextColor } from "../../styled-components/utils/toggleTextColor";
 import {
   laptop,
   tablet,
@@ -10,6 +11,7 @@ export const Container = styled.header`
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  color: ${(props) => toggleTextColor(props)};
 
   @media screen and (min-width: ${tablet}) {
     margin-bottom: 2.4rem;
@@ -39,6 +41,6 @@ export const PriceWrapper = styled.h2`
 
 export const PlanDescriptionWrapper = styled.p`
   line-height: 2.8rem;
-  color: ${colorPrimary};
+  color: ${(props) => toggleTextColor(props)};
   margin: 0;
 `;
