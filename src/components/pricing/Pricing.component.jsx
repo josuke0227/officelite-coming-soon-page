@@ -6,7 +6,7 @@ import { Container } from "./Pricing.styles";
 const Pricing = () => (
   <Container>
     {PLANS.map((plan) => (
-      <Card plan={plan} />
+      <Card key={plan.id} plan={plan} />
     ))}
   </Container>
 );
