@@ -4,7 +4,10 @@ import {
   colorPrimary,
   colorSecondary,
 } from "../../styled-components/constants/colors";
-import { tablet } from "../../styled-components/constants/displayBreakpoint";
+import {
+  laptop,
+  tablet,
+} from "../../styled-components/constants/displayBreakpoint";
 
 export const Container = styled.ul`
   margin: 0;
@@ -48,6 +51,12 @@ export const Container = styled.ul`
     & > li > span {
       font-size: 5.6rem;
       line-height: 6.8rem;
+    }
+  }
+
+  @media screen and (min-width: ${laptop}) {
+    & {
+      margin-bottom: 0;
     }
   }
 `;

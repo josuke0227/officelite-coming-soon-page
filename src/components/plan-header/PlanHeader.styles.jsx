@@ -41,6 +41,7 @@ export const PriceWrapper = styled.h2`
 
 export const PlanDescriptionWrapper = styled.p`
   line-height: 2.8rem;
+  font-size: 1.5rem;
   color: ${(props) => toggleTextColor(props)};
   margin: 0;
 `;

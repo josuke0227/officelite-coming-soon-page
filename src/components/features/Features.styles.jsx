@@ -23,6 +23,7 @@ export const FeaturesWrapper = styled.ul`
   }
 
   @media screen and (min-width: ${laptop}) {
+    width: 100%;
     text-align: center;
     margin-bottom: 3.2rem;
   } ;

@@ -56,7 +56,5 @@ export const dateFormatter = (distance) => {
 
 export const updateLaunchDate = (launchDate) => {
   const [, month, day, year] = new Date(launchDate).toString().split(" ");
-  let formattedDay = day.startsWith("0") ? day.substr(1) : day;
-
-  return `${formattedDay} ${month} ${year}`;
+  return `${day} ${month} ${year}`;
 };

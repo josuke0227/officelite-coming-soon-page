@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colorBgDark, colorPrimary, colorSecondary } from "./constants/colors";
+import { colorPrimary, colorSecondary } from "./constants/colors";
 import { laptop, tablet } from "./constants/displayBreakpoint";
 
 export const GlobalStyle = createGlobalStyle`
@@ -10,10 +10,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Kumbh Sans", sans-serif;
     max-width: 1440px;
-    // margin: auto;
-    margin: 0 2.3rem;
-
-    background: ${colorBgDark};
+    margin: auto;
+    
+    // margin: 0 2.3rem;
+    // background: green;
   }
 
   h1,
