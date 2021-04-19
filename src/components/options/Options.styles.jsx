@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { colorSecondaryLight } from "../../styled-components/constants/colors";
 
 export const OptionsContainer = styled.div`
+  background: white;
   border: 1px solid ${colorSecondaryLight};
   border-radius: 8px;
   display: ${(props) => (props.showOptions ? "block" : "none")};

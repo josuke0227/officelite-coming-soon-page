@@ -33,6 +33,7 @@ export const GroupContainer = styled.div`
 `;
 
 export const FormInputContainer = styled.input`
+  box-sizing: border-box;
   ${formStyle}
   color: ${colorPrimary};
 

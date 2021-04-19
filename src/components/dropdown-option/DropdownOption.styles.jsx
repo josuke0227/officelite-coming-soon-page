@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { DropdownBox, SelectedValueWrapper } from "../dropdown/Dropdown.styles";
 
 export const OptionWrapper = styled(DropdownBox)`
-  margin: 0 auto;
-  width: 27rem;
+  margin: 0 24px;
+  width: auto;
 
   &: first-child {
     border-radius: 8px 8px 0 0;
