@@ -15,16 +15,6 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const OptionsContainer = styled.div`
-  border: 1px solid ${colorSecondaryLight};
-  border-radius: 8px;
-  display: ${(props) => (props.showOptions ? "block" : "none")};
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  top: 105%;
-`;
-
 export const DropdownBox = styled.div`
   ${formStyle}
   display: flex;
@@ -58,21 +48,3 @@ export const PriceWrapper = styled.span`
   color: ${colorSecondaryLight};
   margin-left: 1rem;
 `;
-
-// Styles for react-transition-groupconst duration = 300;
-
-export class ChevronTransition {
-  duration = 300;
-
-  defaultStyle = {
-    transform: "rotateX(0deg)",
-    transition: `transform ${this.duration}ms ease-in`,
-  };
-
-  transitionStyle = {
-    entering: { transform: "rotateX(180deg)" },
-    entered: { transform: "rotateX(180deg)" },
-    exiting: { transform: "rotateX(0deg)" },
-    exited: { transform: "rotateX(0deg)" },
-  };
-}

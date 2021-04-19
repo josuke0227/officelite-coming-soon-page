@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import DropdownOption from "../dropdown-option/DropdownOption.component";
-
-import { Transition } from "react-transition-group";
+import ChevronIcon from "../chevronIcon/ChevronIcon.component";
+import Options from "../options/Options.component";
 
 import {
   DropdownBox,
-  OptionsContainer,
   Container,
   IconWrapper,
   SelectedValueWrapper,
-  ChevronTransition,
 } from "./Dropdown.styles";
-
-import chevronUrl from "../../images/icons/chevron-down.svg";
 
 const Dropdown = ({ value, plans, setValue }) => {
   const [showOptions, setShowOptions] = useState(false);
@@ -22,8 +18,6 @@ const Dropdown = ({ value, plans, setValue }) => {
     setValue(data);
   };
 
-  const { duration, defaultStyle, transitionStyle } = new ChevronTransition();
-
   return (
     <Container>
       <DropdownBox>
@@ -31,21 +25,10 @@ const Dropdown = ({ value, plans, setValue }) => {
           {value.name}
         </SelectedValueWrapper>
         <IconWrapper onClick={() => setShowOptions(!showOptions)}>
-          <Transition in={showOptions} timeout={duration}>
-            {(state) => (
-              <img
-                src={chevronUrl}
-                alt=""
-                style={{
-                  ...defaultStyle,
-                  ...transitionStyle[state],
-                }}
-              />
-            )}
-          </Transition>
+          <ChevronIcon showOptions={showOptions} />
         </IconWrapper>
       </DropdownBox>
-      <OptionsContainer showOptions={showOptions}>
+      <Options showOptions={showOptions}>
         {plans.map((plan) => (
           <DropdownOption
             plan={plan}
@@ -53,7 +36,7 @@ const Dropdown = ({ value, plans, setValue }) => {
             value={value}
           />
         ))}
-      </OptionsContainer>
+      </Options>
     </Container>
   );
 };
