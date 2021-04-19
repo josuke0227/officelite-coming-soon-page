@@ -39,20 +39,6 @@ export const IconWrapper = styled.span`
   cursor: pointer;
 `;
 
-export const OptionWrapper = styled(DropdownBox)`
-  margin: 0 auto;
-  width: 27rem;
-
-  &: first-child {
-    border-radius: 8px 8px 0 0;
-  }
-
-  &:last-child {
-    border-bottom: none;
-    border-radius: 0 0 8px 8px;
-  }
-`;
-
 export const SelectedValueWrapper = styled.span`
   ${sharedStyle};
   color: ${colorPrimary};
@@ -67,10 +53,6 @@ export const SelectedValueWrapper = styled.span`
   }
 `;
 
-export const OptionTextWrapper = styled(SelectedValueWrapper)`
-  margin-left: 0;
-`;
-
 export const PriceWrapper = styled.span`
   ${sharedStyle};
   color: ${colorSecondaryLight};
@@ -83,14 +65,14 @@ export class ChevronTransition {
   duration = 300;
 
   defaultStyle = {
-    transform: "rotate(0deg)",
+    transform: "rotateX(0deg)",
     transition: `transform ${this.duration}ms ease-in`,
   };
 
-  transitionStyles = {
-    entering: { transform: "rotate(180deg)" },
-    entered: { transform: "rotate(180deg)" },
-    exiting: { transform: "rotate(0deg)" },
-    exited: { transform: "rotate(0deg)" },
+  transitionStyle = {
+    entering: { transform: "rotateX(180deg)" },
+    entered: { transform: "rotateX(180deg)" },
+    exiting: { transform: "rotateX(0deg)" },
+    exited: { transform: "rotateX(0deg)" },
   };
 }

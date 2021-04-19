@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import DropdownOption from "../dropdown-option/DropdownOption.component";
 
 import { Transition } from "react-transition-group";
 
 import {
-  OptionTextWrapper,
   DropdownBox,
-  OptionWrapper,
   OptionsContainer,
   Container,
   IconWrapper,
@@ -13,7 +12,6 @@ import {
   ChevronTransition,
 } from "./Dropdown.styles";
 
-import { ReactComponent as Tick } from "../../images/icons/tick.svg";
 import chevronUrl from "../../images/icons/chevron-down.svg";
 
 const Dropdown = ({ value, plans, setValue }) => {
@@ -24,7 +22,7 @@ const Dropdown = ({ value, plans, setValue }) => {
     setValue(data);
   };
 
-  const { duration, defaultStyle, transitionStyles } = new ChevronTransition();
+  const { duration, defaultStyle, transitionStyle } = new ChevronTransition();
 
   return (
     <Container>
@@ -38,31 +36,23 @@ const Dropdown = ({ value, plans, setValue }) => {
               <img
                 src={chevronUrl}
                 alt=""
-                style={{ ...defaultStyle, ...transitionStyles[state] }}
+                style={{
+                  ...defaultStyle,
+                  ...transitionStyle[state],
+                }}
               />
             )}
           </Transition>
         </IconWrapper>
       </DropdownBox>
       <OptionsContainer showOptions={showOptions}>
-        {plans.map((plan) => {
-          const { id, name, price } = plan;
-          const displayedName = name + " Pack";
-
-          return (
-            <OptionWrapper
-              key={id}
-              onClick={() =>
-                handleOptionClick({ id, name: displayedName, price })
-              }
-            >
-              <OptionTextWrapper content={price}>
-                {displayedName}
-              </OptionTextWrapper>
-              {value.id === id && <Tick />}
-            </OptionWrapper>
-          );
-        })}
+        {plans.map((plan) => (
+          <DropdownOption
+            plan={plan}
+            handleOptionClick={handleOptionClick}
+            value={value}
+          />
+        ))}
       </OptionsContainer>
     </Container>
   );
