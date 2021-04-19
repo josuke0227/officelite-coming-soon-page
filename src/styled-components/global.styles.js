@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1440px;
     margin: auto;
     
-    // margin: 0 2.3rem;
+    margin: 0 2.3rem;
     // background: green;
   }
 

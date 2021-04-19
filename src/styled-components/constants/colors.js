@@ -5,6 +5,7 @@ const colorBgLight = "#f2f2f2";
 const colorLightBlue = "#e4eafe";
 const colorPrimary = "#333950";
 const colorSecondary = "#747b95";
+const colorSecondaryLight = "rgba(116, 123, 149, 0.5)";
 const colorUiError = "#f05b5b";
 
 export {
@@ -15,5 +16,6 @@ export {
   colorLightBlue,
   colorPrimary,
   colorSecondary,
+  colorSecondaryLight,
   colorUiError,
 };
