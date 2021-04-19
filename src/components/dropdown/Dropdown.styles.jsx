@@ -16,6 +16,7 @@ export const Container = styled.div`
 `;
 
 export const DropdownBox = styled.div`
+  cursor: pointer;
   ${formStyle}
   display: flex;
   justify-content: space-between;
@@ -26,14 +27,12 @@ export const DropdownBox = styled.div`
 
 export const IconWrapper = styled.span`
   margin-right: 1.6rem;
-  cursor: pointer;
 `;
 
 export const SelectedValueWrapper = styled.span`
   ${sharedStyle};
   color: ${colorPrimary};
   margin-left: 1.6rem;
-  cursor: pointer;
 
   &::after {
     content: "${(props) => props.content}";

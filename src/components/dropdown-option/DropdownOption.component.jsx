@@ -9,11 +9,13 @@ const DropdownOption = ({ plan, value, handleOptionClick }) => {
   const displayedName = name + " Pack";
 
   return (
-    <OptionWrapper
-      key={id}
-      onClick={() => handleOptionClick({ id, name: displayedName, price })}
-    >
-      <OptionTextWrapper content={price}>{displayedName}</OptionTextWrapper>
+    <OptionWrapper key={id}>
+      <OptionTextWrapper
+        content={price}
+        onClick={() => handleOptionClick({ id, name: displayedName, price })}
+      >
+        {displayedName}
+      </OptionTextWrapper>
       {value.id === id && <Tick />}
     </OptionWrapper>
   );

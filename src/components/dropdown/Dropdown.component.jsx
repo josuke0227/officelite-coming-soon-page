@@ -20,7 +20,7 @@ const Dropdown = ({ value, plans, setValue }) => {
 
   return (
     <Container>
-      <DropdownBox>
+      <DropdownBox onClick={() => setShowOptions(!showOptions)}>
         <SelectedValueWrapper content={value.price}>
           {value.name}
         </SelectedValueWrapper>
