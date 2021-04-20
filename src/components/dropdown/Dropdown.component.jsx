@@ -25,6 +25,7 @@ const Dropdown = ({
   const isError = !!errors.plans;
 
   const handleOptionClick = (data) => {
+    console.log(data);
     const { id, name, price } = data;
     const currentError = { ...errors };
     const result = inputSchemas.plans.validate({ id, name, price });
@@ -63,7 +64,7 @@ const Dropdown = ({
         {plans.map((plan) => (
           <DropdownOption
             plan={plan}
-            handleOptionClick={() => handleOptionClick(plan)}
+            handleOptionClick={handleOptionClick}
             value={signupData}
           />
         ))}
