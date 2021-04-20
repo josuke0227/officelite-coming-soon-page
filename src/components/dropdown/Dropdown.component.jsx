@@ -10,19 +10,23 @@ import {
   SelectedValueWrapper,
 } from "./Dropdown.styles";
 
-const Dropdown = ({ value, plans, setValue }) => {
+const Dropdown = ({ signupData, plans, setSignupData }) => {
   const [showOptions, setShowOptions] = useState(false);
 
   const handleOptionClick = (data) => {
+    const { id, name, price } = data;
+
+    const optionData = { ...signupData, plans: { id, name, price } };
+
+    setSignupData(optionData);
     setShowOptions(false);
-    setValue(data);
   };
 
   return (
     <Container>
       <DropdownBox onClick={() => setShowOptions(!showOptions)}>
-        <SelectedValueWrapper content={value.price}>
-          {value.name}
+        <SelectedValueWrapper content={signupData.plans.price}>
+          {signupData.plans.name}
         </SelectedValueWrapper>
         <IconWrapper onClick={() => setShowOptions(!showOptions)}>
           <ChevronIcon showOptions={showOptions} />
@@ -32,8 +36,8 @@ const Dropdown = ({ value, plans, setValue }) => {
         {plans.map((plan) => (
           <DropdownOption
             plan={plan}
-            handleOptionClick={handleOptionClick}
-            value={value}
+            handleOptionClick={() => handleOptionClick(plan)}
+            value={signupData}
           />
         ))}
       </Options>

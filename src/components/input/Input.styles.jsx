@@ -37,6 +37,10 @@ export const FormInputContainer = styled.input`
   ${formStyle}
   color: ${colorPrimary};
 
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+  }
+
   &:focus {
     outline: none;
   }

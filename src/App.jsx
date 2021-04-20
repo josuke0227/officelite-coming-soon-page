@@ -12,15 +12,10 @@ import { Container, ContentsWrapper } from "./App.styles";
 import SignupForm from "./components/signup-form/SignupForm.component";
 
 function App() {
-  const [value, setValue] = useState({
-    name: "Please choose a plan",
-    price: "",
-  });
-
   return (
     <>
       <GlobalStyle />
-      <SignupForm plans={PLANS} value={value} setValue={setValue} />
+      <SignupForm />
     </>
   );
 }
