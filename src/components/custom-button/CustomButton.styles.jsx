@@ -65,6 +65,10 @@ export const CustomButtonContainer = styled.button`
   text-align: left;
   display: block;
 
+  &:focus {
+    outline: none;
+  }
+
   ${switchButtonStyle}
 
   & > a {
