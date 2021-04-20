@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import {
   colorPrimary,
   colorSecondaryLight,
+  colorUiError,
 } from "../../styled-components/constants/colors";
 
 import { formStyle } from "../input/Input.styles";
@@ -18,6 +19,7 @@ export const Container = styled.div`
 export const DropdownBox = styled.div`
   cursor: pointer;
   ${formStyle}
+  border-bottom: ${(props) => props.isError && `1px solid ${colorUiError}`};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,4 +48,10 @@ export const PriceWrapper = styled.span`
   ${sharedStyle};
   color: ${colorSecondaryLight};
   margin-left: 1rem;
+`;
+
+export const ErrorIconWrapper = styled.span`
+  position: relative;
+  top: 4px;
+  left: -10px;
 `;

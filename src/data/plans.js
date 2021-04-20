@@ -1,6 +1,6 @@
 export const PLANS = [
   {
-    id: 1,
+    id: "1",
     name: "Basic",
     price: "Free",
     description: "Up to 5 users for free",
@@ -11,7 +11,7 @@ export const PLANS = [
     ],
   },
   {
-    id: 2,
+    id: "2",
     name: "Pro",
     price: "$9.99",
     description: "Per user, billed monthly",
@@ -22,7 +22,7 @@ export const PLANS = [
     ],
   },
   {
-    id: 3,
+    id: "3",
     name: "Ultimate",
     price: "$19.99",
     description: "Per user, billed monthly",
