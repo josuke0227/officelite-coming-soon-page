@@ -62,6 +62,7 @@ const Dropdown = ({
       <Options showOptions={showOptions}>
         {plans.map((plan) => (
           <DropdownOption
+            key={plan.id}
             plan={plan}
             handleOptionClick={handleOptionClick}
             value={signupData}
