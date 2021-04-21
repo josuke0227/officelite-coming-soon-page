@@ -8,6 +8,7 @@ export const FormContainer = styled.div`
   background: white;
   border-radius: 13px;
   padding: 2.4rem;
+  box-shadow: 0px 0px 10px 1px #333;
 
   @media screen and (min-width: ${tablet}) {
     box-sizing: border-box;
