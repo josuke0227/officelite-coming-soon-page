@@ -12,7 +12,7 @@ const planSchema = Joi.object()
   .keys({ id: Joi.string(), name: Joi.string(), price: Joi.string() })
   .required()
   .label("Plan");
-const phoneNumberSchema = Joi.number().required().label("Phone Number");
+const phoneNumberSchema = Joi.number().allow("").label("Phone Number");
 const companySchema = Joi.string()
   .min(3)
   .max(30)

@@ -24,7 +24,7 @@ const Article = ({ article, signup }) => {
     <HeroContent>
       <HeroHeader>{header}</HeroHeader>
       <HeroText>{body}</HeroText>
-      <CustomButton shadow to="/signup">
+      <CustomButton shadow to="signup">
         Get started
       </CustomButton>
     </HeroContent>

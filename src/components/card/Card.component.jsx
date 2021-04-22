@@ -19,7 +19,7 @@ const Card = ({ plan }) => {
         highlighted={shouldHighlight}
       />
       <Features features={features} highlighted={shouldHighlight} />
-      <CustomButton to="/signup" card highlighted={shouldHighlight}>
+      <CustomButton to="signup" card highlighted={shouldHighlight}>
         Try for Free
       </CustomButton>
     </Container>
