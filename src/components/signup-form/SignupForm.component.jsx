@@ -45,7 +45,7 @@ const SignupForm = ({ signup }) => {
     } else errorObj = {};
     setErrors(errorObj);
     setSignupData(initialState);
-    console.log("submitted");
+    alert("Thank you for subscription! 😁");
   };
 
   return (
