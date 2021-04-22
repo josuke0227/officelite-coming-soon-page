@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import {
+  colorAccent,
   colorPrimary,
   colorSecondary,
 } from "../../styled-components/constants/colors";
@@ -16,12 +17,12 @@ export const Container = styled.ul`
   display: inline-flex;
   color: ${colorSecondary};
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: ${(props) => (props.signup ? "0" : "4rem")};
 
   & > li {
     min-width: 72px;
     border-radius: 5px;
-    background-color: ${colorPrimary};
+    background-color: ${(props) => (props.signup ? "#e9edfb" : colorPrimary)};
     text-align: center;
     padding: 1rem 0;
     font-size: 1.2rem;
@@ -33,7 +34,7 @@ export const Container = styled.ul`
     letter-spacing: 0px;
     font-size: 3.2rem;
     line-height: 4.8rem;
-    color: #fff;
+    color: ${(props) => (props.signup ? colorAccent : "#fff")};
     display: block;
   }
 

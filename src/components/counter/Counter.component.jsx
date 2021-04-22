@@ -6,7 +6,7 @@ import { Container } from "./Counter.styles";
 
 import { getLanchDate, dateFormatter } from "../../utils/counter.utils";
 
-const Counter = () => {
+const Counter = ({ signup }) => {
   const [count, setCount] = useState([]);
   const [launchDate, setLaunchDate] = useState("");
 
@@ -23,10 +23,10 @@ const Counter = () => {
   }, []);
 
   return (
-    <Container>
-      <CounterHeader launchDate={launchDate} />
-      <CounterBody count={count} />
-      <CustomButton>Get started</CustomButton>
+    <Container signup={signup}>
+      <CounterHeader launchDate={launchDate} signup={signup} />
+      <CounterBody count={count} signup={signup} />
+      {!signup && <CustomButton>Get started</CustomButton>}
     </Container>
   );
 };

@@ -32,3 +32,31 @@ export const HeroText = styled.p`
     margin: 0 0 3.2rem;
   }
 `;
+
+export const SignupContent = styled(HeroContent)`
+  grid-area: article;
+  margin-top: 8rem;
+
+  @media screen and (min-width: ${tablet}) {
+    align-items: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  @media screen and (min-width: ${laptop}) {
+    align-items: start;
+    margin-left: 0;
+    margin-right: 13rem;
+  }
+`;
+
+export const SignupText = styled(HeroText)`
+  margin-bottom: 0;
+
+  @media screen and (min-width: ${tablet}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${laptop}) {
+    text-align: left;
+  }
+`;

@@ -8,6 +8,7 @@ import {
 const transition = "0.5s ease-in-out";
 const bgHoverPrimary = "#829cff";
 const bgHoverPale = "#d3ddfe";
+export const blueShadow = "0px 25px 25px -10px rgba(63, 91, 194, 0.247159)";
 
 const primaryButtonStyle = css`
   background: ${colorAccent};
@@ -41,7 +42,7 @@ const whiteButtonStyle = css`
 
 const primaryButtonStyleWithShadow = css`
   ${primaryButtonStyle};
-  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  box-shadow: ${blueShadow};
 `;
 
 function switchButtonStyle(props) {

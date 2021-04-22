@@ -1,13 +1,13 @@
 import React from "react";
 import HeroImage from "../hero-image/HeroImage.component";
-import HeroArticle from "../hero-article/HeroArticle.component";
+import Article from "../article/Article.component";
 
 import { HeroContainer } from "./Hero.styles";
 
-const Hero = () => (
+const Hero = ({ article }) => (
   <HeroContainer>
     <HeroImage />
-    <HeroArticle />
+    <Article article={article} />
   </HeroContainer>
 );
 

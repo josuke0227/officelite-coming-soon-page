@@ -2,11 +2,11 @@ import React from "react";
 
 import { Container } from "./CounterBody.styles";
 
-const CounterBody = ({ count }) => {
+const CounterBody = ({ count, signup }) => {
   const [day, hours, minutes, seconds] = count;
 
   return (
-    <Container>
+    <Container signup={signup}>
       <li>
         <span>{day}</span>days
       </li>

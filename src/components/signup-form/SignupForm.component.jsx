@@ -8,7 +8,7 @@ import { userSchema, inputSchemas } from "./schema";
 
 import { PLANS } from "../../data/plans";
 
-const SignupForm = () => {
+const SignupForm = ({ signup }) => {
   const initialState = {
     name: "",
     email: "",
@@ -49,7 +49,7 @@ const SignupForm = () => {
   };
 
   return (
-    <FormContainer>
+    <FormContainer signup={signup}>
       <Input
         name="name"
         type="text"

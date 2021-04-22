@@ -2,17 +2,29 @@ import styled from "styled-components";
 
 import { CustomButtonContainer } from "../custom-button/CustomButton.styles";
 
-import { tablet } from "../../styled-components/constants/displayBreakpoint";
+import {
+  laptop,
+  laptopL,
+  tablet,
+} from "../../styled-components/constants/displayBreakpoint";
 
 export const FormContainer = styled.div`
+  grid-area: form;
   background: white;
   border-radius: 13px;
   padding: 2.4rem;
-  box-shadow: 0px 0px 10px 1px #333;
+  box-shadow: ${(props) =>
+    props.signup && "0px 25px 25px -10px rgba(63, 91, 194, 0.247159)"};
 
   @media screen and (min-width: ${tablet}) {
+    margin: auto;
     box-sizing: border-box;
     max-width: 445px;
+    padding: 4rem 4rem 5rem;
+  }
+
+  @media screen and (min-width: ${laptop}) {
+    min-width: 445px;
   }
 `;
 
