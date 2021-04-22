@@ -43,10 +43,7 @@ const Dropdown = ({
 
   return (
     <Container>
-      <DropdownBox
-        isError={isError}
-        onClick={() => setShowOptions(!showOptions)}
-      >
+      <DropdownBox isError={isError}>
         <SelectedValueWrapper content={signupData.plans.price}>
           {isError && (
             <ErrorIconWrapper>
