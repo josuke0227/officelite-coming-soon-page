@@ -21,8 +21,8 @@ const SignupForm = ({ signup }) => {
 
   const [errors, setErrors] = useState({});
 
-  const handleInputChange = (e) => {
-    const { value, name } = e.target;
+  const handleInputChange = ({ target }) => {
+    const { value, name } = target;
     const currentError = { ...errors };
     const result = inputSchemas[name].validate(value);
     if (result.error) {
