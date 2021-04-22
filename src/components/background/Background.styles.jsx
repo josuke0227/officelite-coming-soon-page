@@ -13,7 +13,7 @@ import {
 
 export const BackgroundContainer = styled.div`
   @media screen and (min-width: ${laptop}) {
-    display: flex;
+    ${(props) => props.signup && "display: flex"};
   }
 `;
 

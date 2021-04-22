@@ -34,11 +34,16 @@ export const ContentsWrapper = styled.div`
 
   @media screen and (min-width: ${laptop}) {
     margin: 8rem 2rem 9rem;
+
+    ${(props) =>
+      props.signup &&
+      `
     display: grid;
     grid-template-areas:
       "header header"
       "article form"
-      "counter form";
+      "counter form"
+    `}
   }
 
   @media screen and (min-width: ${laptopL}) {

@@ -7,7 +7,7 @@ import {
 } from "./Background.styles";
 
 const Background = ({ signup }) => (
-  <BackgroundContainer>
+  <BackgroundContainer signup={signup}>
     <BackgroundLight signup={signup} />
     <BackgroundDark signup={signup} />
   </BackgroundContainer>
