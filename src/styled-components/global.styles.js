@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colorBgLight, colorPrimary, colorSecondary } from "./constants/colors";
+import { colorPrimary, colorSecondary } from "./constants/colors";
 import { laptop, tablet } from "./constants/displayBreakpoint";
 
 export const GlobalStyle = createGlobalStyle`

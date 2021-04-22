@@ -4,7 +4,6 @@ import { CustomButtonContainer } from "../custom-button/CustomButton.styles";
 
 import {
   laptop,
-  laptopL,
   tablet,
 } from "../../styled-components/constants/displayBreakpoint";
 

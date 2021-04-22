@@ -4,7 +4,6 @@ import {
   colorAccentPale,
   colorLightBlue,
 } from "../../styled-components/constants/colors";
-import { tablet } from "../../styled-components/constants/displayBreakpoint";
 
 const transition = "0.5s ease-in-out";
 const bgHoverPrimary = "#829cff";

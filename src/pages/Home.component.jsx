@@ -5,13 +5,13 @@ import Hero from "../components/hero/Hero.component";
 import Pricing from "../components/pricing/Pricing.component";
 import Counter from "../components/counter/Counter.component";
 
-import { homePageArticle } from "../data/article";
+import { HOME_PAGE_ARTICLE } from "../data/article";
 
 const Home = () => {
   return (
     <Layout>
       <Header />
-      <Hero article={homePageArticle} />
+      <Hero article={HOME_PAGE_ARTICLE} />
       <Pricing />
       <Counter />
     </Layout>

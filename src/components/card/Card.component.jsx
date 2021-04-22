@@ -2,7 +2,7 @@ import React from "react";
 import PlanHeader from "../plan-header/PlanHeader.component";
 import Features from "../features/Features.component";
 
-import { CardButton, Container } from "./Card.styles";
+import { Container } from "./Card.styles";
 import CustomButton from "../custom-button/CustomButton.component";
 
 const Card = ({ plan }) => {

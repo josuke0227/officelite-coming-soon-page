@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import headerBgPattern from "../../images/home/bg-pattern-header.svg";
 import footerBgPattern from "../../images/home/bg-pattern-footer.svg";
