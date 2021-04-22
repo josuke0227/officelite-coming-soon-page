@@ -1,5 +1,6 @@
 import React from "react";
 import CustomButton from "../custom-button/CustomButton.component";
+
 import {
   HeroContent,
   HeroHeader,
@@ -23,7 +24,9 @@ const Article = ({ article, signup }) => {
     <HeroContent>
       <HeroHeader>{header}</HeroHeader>
       <HeroText>{body}</HeroText>
-      <CustomButton shadow>Get started</CustomButton>
+      <CustomButton shadow to="/signup">
+        Get started
+      </CustomButton>
     </HeroContent>
   );
 };

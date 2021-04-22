@@ -26,7 +26,7 @@ const Counter = ({ signup }) => {
     <Container signup={signup}>
       <CounterHeader launchDate={launchDate} signup={signup} />
       <CounterBody count={count} signup={signup} />
-      {!signup && <CustomButton>Get started</CustomButton>}
+      {!signup && <CustomButton to="/signup">Get started</CustomButton>}
     </Container>
   );
 };

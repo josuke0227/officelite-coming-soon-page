@@ -3,6 +3,7 @@ import PlanHeader from "../plan-header/PlanHeader.component";
 import Features from "../features/Features.component";
 
 import { CardButton, Container } from "./Card.styles";
+import CustomButton from "../custom-button/CustomButton.component";
 
 const Card = ({ plan }) => {
   const { name, price, description, features } = plan;
@@ -18,9 +19,9 @@ const Card = ({ plan }) => {
         highlighted={shouldHighlight}
       />
       <Features features={features} highlighted={shouldHighlight} />
-      <CardButton pale highlighted={shouldHighlight}>
+      <CustomButton to="/signup" card highlighted={shouldHighlight}>
         Try for Free
-      </CardButton>
+      </CustomButton>
     </Container>
   );
 };
