@@ -9,7 +9,9 @@ const CountdownHeader = ({ launchDate, signup }) => {
   return (
     <HeaderWrapper signup={signup}>
       Coming
-      <DateWrapper>{dateString}</DateWrapper>
+      <DateWrapper>
+        {dateString.startsWith("undefined") ? "..." : dateString}
+      </DateWrapper>
     </HeaderWrapper>
   );
 };

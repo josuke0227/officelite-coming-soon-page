@@ -8,16 +8,16 @@ const CounterBody = ({ count, signup }) => {
   return (
     <Container signup={signup}>
       <li>
-        <span>{day}</span>days
+        <span>{day || "--"}</span>days
       </li>
       <li>
-        <span>{hours}</span>hours
+        <span>{hours || "--"}</span>hours
       </li>
       <li>
-        <span>{minutes}</span>minues
+        <span>{minutes || "--"}</span>minues
       </li>
       <li>
-        <span>{seconds}</span>seconds
+        <span>{seconds || "--"}</span>seconds
       </li>
     </Container>
   );
