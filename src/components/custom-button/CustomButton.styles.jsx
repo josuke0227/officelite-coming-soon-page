@@ -4,6 +4,7 @@ import {
   colorAccentPale,
   colorLightBlue,
 } from "../../styled-components/constants/colors";
+import { tablet } from "../../styled-components/constants/displayBreakpoint";
 
 const transition = "0.5s ease-in-out";
 const bgHoverPrimary = "#829cff";
@@ -46,9 +47,9 @@ const primaryButtonStyleWithShadow = css`
 `;
 
 function switchButtonStyle(props) {
+  if (props.card && props.highlighted) return whiteButtonStyle;
   if (props.shadow) return primaryButtonStyleWithShadow;
-  if (props.pale) return paleButtonStyle;
-  if (props.white) return whiteButtonStyle;
+  if (props.card) return paleButtonStyle;
   return primaryButtonStyle;
 }
 
