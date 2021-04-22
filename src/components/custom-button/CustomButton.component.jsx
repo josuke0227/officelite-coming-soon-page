@@ -6,9 +6,9 @@ import { CustomButtonContainer } from "./CustomButton.styles";
 
 const CustomButton = ({ children, to, ...props }) => {
   return to ? (
-    <CustomButtonContainer {...props}>
-      <Link to={to}>{children}</Link>
-    </CustomButtonContainer>
+    <Link to={to}>
+      <CustomButtonContainer {...props}>{children}</CustomButtonContainer>
+    </Link>
   ) : (
     <CustomButtonContainer {...props}>{children}</CustomButtonContainer>
   );

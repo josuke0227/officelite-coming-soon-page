@@ -47,6 +47,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media screen and (min-width: ${tablet}) {
     h1,
     p {
