@@ -11,14 +11,14 @@ const Counter = ({ signup }) => {
   const [launchDate, setLaunchDate] = useState("");
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       const { distance, launchDate } = getLanchDate();
       setCount(dateFormatter(distance));
       setLaunchDate(launchDate);
     }, 1000);
 
     return () => {
-      clearInterval();
+      clearInterval(interval);
     };
   }, []);
 
