@@ -3,7 +3,6 @@ import React from "react";
 import { Transition } from "react-transition-group";
 
 import { OptionsContainer } from "./Options.styles";
-
 import { OptionsTransition } from "./OptionsTransition";
 
 const Options = ({ showOptions, children }) => {
