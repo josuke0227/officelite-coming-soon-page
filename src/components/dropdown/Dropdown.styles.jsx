@@ -17,7 +17,6 @@ export const Container = styled.div`
 `;
 
 export const DropdownBox = styled.div`
-  cursor: pointer;
   ${formStyle}
   border-bottom: ${(props) => props.isError && `1px solid ${colorUiError}`};
   display: flex;
@@ -29,6 +28,7 @@ export const DropdownBox = styled.div`
 
 export const IconWrapper = styled.span`
   margin-right: 1.6rem;
+  cursor: pointer;
 `;
 
 export const SelectedValueWrapper = styled.span`

@@ -17,6 +17,7 @@ export const OptionWrapper = styled(DropdownBox)`
 
 export const OptionTextWrapper = styled(SelectedValueWrapper)`
   margin-left: 0;
+  cursor: pointer;
   &:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
