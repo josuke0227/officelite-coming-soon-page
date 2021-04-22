@@ -5,7 +5,7 @@ import {
   colorLightBlue,
 } from "../../styled-components/constants/colors";
 
-const transition = "0.5s ease-in-out";
+const transition = "0.1s ease-in-out";
 const bgHoverPrimary = "#829cff";
 const bgHoverPale = "#d3ddfe";
 export const blueShadow = "0px 25px 25px -10px rgba(63, 91, 194, 0.247159)";
