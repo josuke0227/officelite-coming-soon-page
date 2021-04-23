@@ -37,7 +37,7 @@ export const BackgroundLight = styled.div`
     background-image: ${(props) =>
       props.signup ? "none" : `url(${headerBgPattern})`};
     background-position-x: 65rem;
-    background-position-y: -42rem;
+    background-position-y: -46rem;
     background-size: initial;
   }
 `;
