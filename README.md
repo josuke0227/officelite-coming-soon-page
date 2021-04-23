@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://hungry-edison-c89544.netlify.app/)
+- Live Site URL: [https://hungry-edison-c89544.netlify.app/](https://hungry-edison-c89544.netlify.app/)
 
 ## My process
 
@@ -79,7 +79,8 @@ build multicolor background.
 
 ```html
 <Container style={{ height: "total height of <Contents wrapper>" }}>
-  <Background /> // contains upper BG and bottom BG
+  <Background /> // contains top BG and bottom BG
+
     // put the content onto Container which has background
   <ContentsWrapper
     style={{position: "absolute", top: "0", right: "0"}}
