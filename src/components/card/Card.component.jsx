@@ -5,13 +5,17 @@ import Features from "../features/Features.component";
 import { Container } from "./Card.styles";
 import CustomButton from "../custom-button/CustomButton.component";
 
-const Card = ({ plan }) => {
+const Card = ({ plan, index }) => {
   const { name, price, description, features } = plan;
 
   const shouldHighlight = name.match("Pro");
 
   return (
-    <Container highlighted={shouldHighlight}>
+    <Container
+      highlighted={shouldHighlight}
+      data-aos="zoom-in"
+      data-aos-delay={`${index * 200}`}
+    >
       <PlanHeader
         name={name}
         price={price}

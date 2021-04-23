@@ -5,8 +5,8 @@ import { Container } from "./Pricing.styles";
 
 const Pricing = () => (
   <Container>
-    {PLANS.map((plan) => (
-      <Card key={plan.id} plan={plan} />
+    {PLANS.map((plan, index) => (
+      <Card key={plan.id} plan={plan} index={index} />
     ))}
   </Container>
 );

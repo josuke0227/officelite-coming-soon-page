@@ -3,7 +3,7 @@ import { ReactComponent as ChartImage } from "../../images/home/illustration-cha
 import { HeroImageWrapper } from "./HeroImage.styles";
 
 const HeroImage = () => (
-  <HeroImageWrapper>
+  <HeroImageWrapper data-aos="fade-up">
     <ChartImage />
   </HeroImageWrapper>
 );

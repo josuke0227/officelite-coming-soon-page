@@ -49,7 +49,7 @@ const SignupForm = ({ signup }) => {
   };
 
   return (
-    <FormContainer signup={signup}>
+    <FormContainer signup={signup} data-aos="zoom-in" data-aos-delay="300">
       <Input
         name="name"
         type="text"

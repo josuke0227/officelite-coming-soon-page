@@ -15,16 +15,25 @@ const Article = ({ article, signup }) => {
   if (signup)
     return (
       <SignupContent>
-        <HeroHeader>{header}</HeroHeader>
-        <SignupText>{body}</SignupText>
+        <HeroHeader data-aos="fade-right">{header}</HeroHeader>
+        <SignupText data-aos="fade-right" data-aos-delay="300">
+          {body}
+        </SignupText>
       </SignupContent>
     );
 
   return (
     <HeroContent>
-      <HeroHeader>{header}</HeroHeader>
-      <HeroText>{body}</HeroText>
-      <CustomButton shadow to="signup">
+      <HeroHeader data-aos="fade-right">{header}</HeroHeader>
+      <HeroText data-aos="fade-right" data-aos-delay="300">
+        {body}
+      </HeroText>
+      <CustomButton
+        shadow
+        to="signup"
+        data-aos="fade-right"
+        data-aos-delay="600"
+      >
         Get started
       </CustomButton>
     </HeroContent>
