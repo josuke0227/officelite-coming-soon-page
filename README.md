@@ -70,14 +70,13 @@ custom appearance of dropdown made with div and span.
 
 ### Continued development
 
-It was the first time for me to build
-multi-background-pattern web site.
-The approach I took was to build the whole contents expect
-background, then encapsulate them in the element.
-I'm appreciate if there are any good approaches to
-build multicolor background.
+It was the first time for me to build multi-background web site. 
+The approach I took was to build the whole contents except background, 
+then encapsulate them in the <ContentsWrapper> element,
+then put it into entire content container <Container> which has background
+element <Background > with "absolute" position like below.
+I'm appreciate if there are any good approaches to build multi-color background.
 
-```html
 <Container style={{ height: "total height of <ContentsWrapper>" }}>
   <Background /> // contains top BG and bottom BG
 
@@ -87,17 +86,15 @@ build multicolor background.
     >...contains whole content
   </ContentsWrapper>
 </Container>
-```
 
-Finally, for signup page, I decided to give boolean attribute
-"signup" to elements which have similar style between
-homepage and signup page in order to make my code DRY,
-but it resulted in repetitive use of "signup={signup}"
-for elements, also I end up putting so much
-"${props => props.signup ? signupStyle : homepageStyle}".
+Finally, for signup page, I decided to give boolean attribute "signup" to elements 
+which have similar style between homepage and signup page in order to make my code DRY, 
+but it resulted in repetitive use of "signup={signup}" for elements, 
+also I end up putting so much "${props => props.signup ? signupStyle : homepageStyle}" for styled components.
 
-I could not find any good idea about this approach,
-but I'm sure it's better than making new components.
+I decided to take this approach because I didn't want to make similar components
+and I felt that Context API is a bit exaggerating because the "signup" prop drilling was
+just few levels down.
 
 ## Author
 
