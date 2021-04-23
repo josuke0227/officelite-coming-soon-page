@@ -1,4 +1,4 @@
-import Joi from "joi-browser";
+import Joi from "joi";
 
 const nameSchema = Joi.string().min(3).max(30).required().label("Name");
 const emailShcema = Joi.string()
