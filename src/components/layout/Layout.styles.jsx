@@ -14,7 +14,7 @@ export const Container = styled.main`
   }
 
   @media screen and (min-width: ${laptop}) {
-    height: ${(props) => (props.signup ? "100vh" : "195rem")};
+    height: ${(props) => (props.signup ? "100vh" : "187rem")};
   }
 `;
 
