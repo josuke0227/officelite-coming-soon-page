@@ -78,7 +78,7 @@ I'm appreciate if there are any good approaches to
 build multicolor background.
 
 ```html
-<Container style={{ height: "total height of <Contents wrapper>" }}>
+<Container style={{ height: "total height of <ContentsWrapper>" }}>
   <Background /> // contains top BG and bottom BG
 
     // put the content onto Container which has background
