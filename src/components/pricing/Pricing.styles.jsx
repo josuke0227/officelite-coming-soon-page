@@ -14,7 +14,7 @@ export const Container = styled.section`
   }
 
   @media screen and (min-width: ${laptop}) {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 3rem;
     margin-top: 18.4rem;
   }
