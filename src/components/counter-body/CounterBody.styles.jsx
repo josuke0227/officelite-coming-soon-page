@@ -16,10 +16,10 @@ export const Container = styled.ul`
   list-style: none;
   display: inline-flex;
   color: ${colorSecondary};
-  gap: 1rem;
   margin-bottom: ${(props) => (props.signup ? "0" : "4rem")};
 
   & > li {
+    margin-right: 1rem;
     min-width: 72px;
     border-radius: 5px;
     background-color: ${(props) => (props.signup ? "#e9edfb" : colorPrimary)};
@@ -27,6 +27,10 @@ export const Container = styled.ul`
     padding: 1rem 0;
     font-size: 1.2rem;
     line-height: 2.8rem;
+  }
+
+  & > li:last-of-type {
+    margin-right: 0;
   }
 
   & > li > span {
@@ -41,10 +45,10 @@ export const Container = styled.ul`
   @media screen and (min-width: ${tablet}) {
     & {
       margin-bottom: 4.8rem;
-      gap: 1.6rem;
     }
 
     & > li {
+      margin-right: 1.6rem;
       font-size: 1.6rem;
       padding: 1.6rem;
     }
