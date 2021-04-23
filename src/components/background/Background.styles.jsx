@@ -34,6 +34,8 @@ export const BackgroundLight = styled.div`
   @media screen and (min-width: ${laptop}) {
     ${(props) => props.signup && "flex: 0.7; background-color: white;"};
     height: ${(props) => (props.signup ? "100vh" : "131rem")};
+    background-image: ${(props) =>
+      props.signup ? "none" : `url(${headerBgPattern})`};
     background-position-x: 65rem;
     background-position-y: -42rem;
     background-size: initial;
@@ -57,7 +59,7 @@ export const BackgroundDark = styled.div`
 
   @media screen and (min-width: ${laptop}) {
     ${(props) => props.signup && "flex: 0.3; transform: rotate(180deg)"};
-    height: ${(props) => (props.signup ? "100vh" : "67rem")};
+    height: ${(props) => (props.signup ? "100vh" : "56rem")};
     background-position-x: ${(props) => (props.signup ? "-85rem" : "right")};
     background-position-y: ${(props) => (props.signup ? "-35rem" : "-65rem")};
     background-size: ${(props) => (props.signup ? "initial" : "155%")};
